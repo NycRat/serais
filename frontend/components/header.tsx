@@ -33,6 +33,7 @@ export default function Header(props: HeaderProps) {
 const styles = StyleSheet.create({
   container: {
     width: "100%",
+    marginBottom: 25,
   },
   line: {
     height: 1,

@@ -1,11 +1,11 @@
 import { StyleSheet, View } from "react-native";
 import { Link } from "expo-router";
 import Header from "../components/header";
-import { StatusBar } from "expo-status-bar";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Header name="serais" noBackButton />
       <View style={styles.page}>
         <Link
@@ -15,8 +15,7 @@ export default function App() {
           todo list
         </Link>
       </View>
-      <StatusBar style="auto" />
-    </View>
+    </SafeAreaView>
   );
 }
 
