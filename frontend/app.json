@@ -25,7 +25,17 @@
       "bundler": "metro",
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [],
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/Nunito-ExtraLight.ttf",
+            "./assets/Nunito-Regular.ttf"
+          ]
+        }
+      ]
+    ],
     "scheme": "nycrat.serais"
   }
 }

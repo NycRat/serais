@@ -13,11 +13,8 @@ export default function Header(props: HeaderProps) {
       <View style={styles.textContainer}>
         {!props.noBackButton && (
           <>
-            <Link href="/">
-              <View style={styles.backButtonContainer}>
-                <Ionicons name="chevron-back" size={24} color="#7d486b" />
-                <Text style={styles.backButtonText}>back</Text>
-              </View>
+            <Link href="/" style={styles.backButtonContainer}>
+              <Ionicons name="chevron-back" size={32} color="#7d486b" />
             </Link>
             <Text style={{ flex: 1 }}></Text>
           </>
@@ -44,16 +41,14 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 40,
     color: "#26204c",
-    fontWeight: "bold",
-  },
-  backButtonText: {
-    fontSize: 20,
-    color: "#7d486b",
+    fontFamily: "Nunito-Regular",
   },
   backButtonContainer: {
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
+    padding: 10,
+    // backgroundColor: "blue"
   },
   textContainer: {
     flexDirection: "row",
